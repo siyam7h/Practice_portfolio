@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+/* navigation bar */
+nav {
+    overflow: hidden;
+    background-color: #91c4dc;
+    text-align: center;
+    z-index: 10;
+}
+nav ul,
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    display: inline-block;
+    padding: 16px 18px;
+    border-radius: 10px;
+}
+nav ul li:hover {
+    background-color: #f68989;
+}
+nav ul li a {
+    text-decoration: none;
+    color: inherit
+}
+/* side navigation bar */
+aside {
+    overflow: hidden;
+    background-color: #c3ddff;
+    width: 250px;
+    height: 100%;
+}
+aside ul li {
+    padding: 18px;
+}
