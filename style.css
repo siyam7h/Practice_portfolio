@@ -1,38 +1,62 @@
 body {
     margin: 0;
 }
-/* navigation bar */
-nav {
+/*! === navigation bar === */
+.nav {
     overflow: hidden;
     background-color: #91c4dc;
     text-align: center;
     z-index: 10;
 }
-nav ul,
+.nav ul,
 aside ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-nav ul li {
+.nav ul li {
     display: inline-block;
     padding: 16px 18px;
     border-radius: 10px;
 }
-nav ul li:hover {
+.nav ul li:hover {
     background-color: #f68989;
 }
-nav ul li a {
+.nav ul li a {
     text-decoration: none;
     color: inherit
 }
-/* side navigation bar */
-aside {
+/*! === side navigation bar === */
+.side-nav {
     overflow: hidden;
     background-color: #c3ddff;
     width: 250px;
-    height: 100%;
+    height: calc(100vh - 1em - 34px);
 }
-aside ul li {
+.side-nav .list .item .accordion,
+.side-nav .list .item .panel .panel-item {
     padding: 18px;
+    background-color: #e6a6a6;
+    border-radius: 10px;
+    margin: 10px;
+}
+.side-nav .list .item .accordion::after {
+    content: '\002B';
+    font-weight: bold;
+    float: right;
+}
+.side-nav .list .item .accordion.active::after {
+    content: '\2212';
+}
+.side-nav .list .item .panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.side-nav .list .item .panel .panel-item {
+    margin-left: 25px;
+}
+.side-nav .list .item .panel .panel-item a {
+    text-decoration: none;
+    color: inherit;
 }

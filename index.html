@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="nav">
             <ul>
                 <li><a>Home</a></li>
                 <li><a href="#">Project</a></li>
@@ -18,26 +18,28 @@
             </ul>
         </nav>
     </header>
-    <aside>
-        <ul>
-            <li>
-                <button class="accordion">Projects</button>
-                <ul class="panel">
-                    <li><a href="#">Project-1</a></li>
-                    <li><a href="#">Project-2</a></li>
-                    <li><a href="#">Project-3</a></li>
-                    <li><a href="#">Project-4</a></li>
-                </ul>
-            </li>
-            <li>
-                <p class="accordion">Contact</p>
-                <ul class="panel">
-                    <li><a href="#">Linkedin</a></li>
-                    <li><a href="#">Fiverr</a></li>
-                    <li><a href="#">Upwork</a></li>
-                </ul>
-            </li>
-        </ul>
+    <aside class="side-nav">
+        <div class="list">
+            <div class="item">
+                <div class="accordion">Projects</div>
+                <div class="panel">
+                    <div class="panel-item"><a href="#">Project-1</a></div>
+                    <div class="panel-item"><a href="#">Project-2</a></div>
+                    <div class="panel-item"><a href="#">Project-3</a></div>
+                    <div class="panel-item"><a href="#">Project-4</a></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="accordion">Contact</div>
+                <div class="panel">
+                    <div class="panel-item"><a href="#">Linkedin</a></div>
+                    <div class="panel-item"><a href="#">Fiverr</a></div>
+                    <div class="panel-item"><a href="#">Upwork</a></div>
+                </div>
+            </div>
+        </div>
     </aside>
+
+    <script src="./script.js"></script>
 </body>
 </html>
